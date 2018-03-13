@@ -1,0 +1,92 @@
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    color: white;
+    padding-top: 100px;
+    font-size: 6em;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    
+}
+
+input {
+    text-align: center;
+}
+
+button {
+
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 10%;
+    height: 100px;
+}
+
+#firstSec {
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    background-color: #c9ced6;
+    background-image: url("images/main.jpeg");
+    background-size: cover;
+}
+
+#secondSec {
+    display: flex;
+    height: 800px;
+    width: 100%;
+    background-color: #739dcd;
+}
+
+#boxOne {
+    height: 300px;
+    width: 200px;
+    background-color: white;
+}
+
+#boxTwo {
+    height: 300px;
+    width: 200px;
+    background-color: white;
+}
+
+#boxThree {
+    height: 300px;
+    width: 200px;
+    background-color: white;
+}
+
+#thirdSec {
+    height: 800px;
+    width: 100%;
+    background-color: #b8ccea;
+
+}
+
+#officePic {
+    height: 600px;
+    width: 800px;
+}
+
+#fourthSec {
+    height: 800px;
+    width: 100%;
+    background-color: #e9dddd;
+}
+
+#officePicTwo {
+    height: 700px;
+    width: 1000px;
+}
