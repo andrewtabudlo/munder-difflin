@@ -27,7 +27,6 @@ window.addEventListener('scroll', function(e){
 });
 
 mailSubmit.addEventListener('click', function(e){
-    console.log(e);
     if (validateEmail(mailInput.value) == true){
         inputContainer.setAttribute("style", "background-color: #5cb85c;");
         alert("Thanks for subscribing!");

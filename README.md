@@ -15,3 +15,4 @@ Used fade in and out transitions from last class workshop.
 Change background-color after email submit.
 Added audio functionality :)
 Click link to start audio, click again to stop.
+Added email validation.
