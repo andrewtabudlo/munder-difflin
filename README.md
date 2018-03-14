@@ -14,4 +14,4 @@ Then styled after I had all the elements I needed.
 Used fade in and out transitions from last class workshop.
 Change background-color after email submit.
 Added audio functionality :)
-Enter starts audio and Esc stops audio.
+Click link to start audio, click again to stop.

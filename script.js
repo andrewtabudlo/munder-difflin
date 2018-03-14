@@ -4,8 +4,10 @@ let secThree = document.querySelector("#containerThree");
 let secFour = document.querySelector("#containerFour");
 
 let mailSubmit = document.querySelector("#mailSubmit");
+let outOfPaper = document.querySelector("#outOfPaper");
 
 let audio = new Audio("audio/outofpaper.mp3");
+let isPlaying = false;
 
 window.addEventListener('scroll', function(e){
     console.log(window.scrollY);
@@ -17,10 +19,12 @@ window.addEventListener('scroll', function(e){
     if (window.scrollY >= 2200) {secFour.classList = "show";}
 });
 
-window.addEventListener('keydown', function(e){
+outOfPaper.addEventListener('click', function(e){
     console.log(e);
-    if (e.keyCode === 13) { audio.play(); }
-    if (e.keyCode === 27) { audio.pause(); audio.currentTime = 0; }});
+    e.preventDefault();
+    isPlaying = !isPlaying;
+    isPlaying ? audio.play() : audio.pause(); audio.currentTime = 0;
+});
 
 mailSubmit.addEventListener('click', function(e){
     console.log(e);

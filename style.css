@@ -1,6 +1,7 @@
 body {
     font-family: 'Merriweather', serif;
     text-align: center;
+    width: 99%;
 }
 
 h1 {
@@ -8,6 +9,17 @@ h1 {
     color: white;
     font-size: 6em;
     text-shadow: 0.5px 0.5px #d3d3d3;
+    position: relative;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+h1:hover {
+	transform: rotateY(180deg);
 }
 
 h2 {
@@ -21,6 +33,12 @@ h3 {
     text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
+h4 {
+    /* padding-top: 10px; */
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
 p {
     font-family: 'Merriweather', serif;
 }
@@ -31,6 +49,10 @@ input {
 
 button {
     margin: 5px;
+}
+
+footer {
+    color: white;
 }
 
 .hidden {
@@ -79,6 +101,10 @@ button {
     height: 100px;
     width: 300px;
     border-radius: 15px;
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 #secondSec {
@@ -94,48 +120,54 @@ button {
     justify-content: space-around;
     align-items: center;
     height: 800px;
-    width: 80%;
+    width: 100%;
 }
 
 .promiseP {
-
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 80%;
 }
 
 #boxOne {
+    text-align: center;
     height: 500px;
-    width: 300px;
+    width: 400px;
     background-color: white;
     border-radius: 15px;
 }
 
 #plane {
-    height: 200px;
+    height: 300px;
     width: 80%;
     border-radius: 15px;
 }
 
 #boxTwo {
+    text-align: center;
     height: 500px;
-    width: 300px;
+    width: 400px;
     background-color: white;
     border-radius: 15px;
 }
 
 #tree {
-    height: 200px;
+    height: 300px;
     width: 80%;
     border-radius: 15px;
 }
 
 #boxThree {
+    text-align: center;
     height: 500px;
-    width: 300px;
+    width: 400px;
     background-color: white;
     border-radius: 15px;
 }
 
 #plant {
-    height: 200px;
+    height: 300px;
     width: 80%;
     border-radius: 15px;
 }
@@ -155,8 +187,8 @@ button {
 }
 
 #officePic {
-    height: 600px;
-    width: 800px;
+    height: 80%;
+    width: 50%;
     border-radius: 15px;
 }
 
@@ -185,9 +217,14 @@ button {
 
 #officePicTwo {
     justify-content: center;
-    height: 700px;
-    width: 1000px;
+    height: 80%;
+    width: 60%;
     align-items: center;
+    border-radius: 15px;
+}
+
+#outOfPaper {
+    text-decoration: none;
 }
 
 @keyframes fadeIn {
@@ -198,4 +235,73 @@ button {
 @keyframes fadeOut {
     0%   { opacity: 1; }
     100% { opacity: 0; }
+}
+
+@keyframes heading {
+	0%   {top: -500px;}
+	100% {top: 0px;}
+}
+
+@keyframes content {
+	0%   {left: -1000px;}
+	100% {left: 0;}
+}
+
+@media (max-width: 666px) {
+
+@keyframes fadeIn {}
+@keyframes fadeOut {}
+
+#firstSec {
+    width: auto;
+    height: auto;
+}
+
+#containerOne {
+    flex-direction: column;
+    width: auto;
+}
+
+#secondSec {
+    width: auto;
+    height: auto;
+}
+
+#containerTwo {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+#thirdSec {
+    width: auto;
+    height: auto;
+}
+
+#containerThree {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+#officePic {
+    width: 80%;
+}
+
+#containerFour {
+    width: auto;
+    height: auto;
+}
+
+#officePicTwo {
+    width: 80%;
+    height: 60%;
+}
+
+#containerFour {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
 }
