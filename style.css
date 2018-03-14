@@ -4,8 +4,8 @@ body {
 }
 
 h1 {
+    margin: 0 0;
     color: white;
-    padding-top: 200px;
     font-size: 6em;
     text-shadow: 0.5px 0.5px #d3d3d3;
 }
@@ -16,12 +16,13 @@ h2 {
 }
 
 h3 {
+    margin: 5px;
     color: white;
     text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
 p {
-
+    font-family: 'Merriweather', serif;
 }
 
 input {
@@ -29,7 +30,7 @@ input {
 }
 
 button {
-
+    margin: 5px;
 }
 
 .hidden {
@@ -61,46 +62,106 @@ button {
     background-size: cover;
 }
 
+#containerOne {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #51acd6;
+    height: 100px;
+    width: 300px;
+    border-radius: 15px;
+}
+
 #secondSec {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 800px;
     width: 100%;
     background-color: #739dcd;
 }
 
-#boxOne {
+#containerTwo {
     display: flex;
-    height: 300px;
-    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 80%;
+}
+
+.promiseP {
+
+}
+
+#boxOne {
+    height: 500px;
+    width: 300px;
     background-color: white;
+    border-radius: 15px;
+}
+
+#plane {
+    height: 200px;
+    width: 80%;
 }
 
 #boxTwo {
-    display: flex;
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 300px;
     background-color: white;
+    border-radius: 15px;
+}
+
+#tree {
+    height: 200px;
+    width: 80%;
 }
 
 #boxThree {
-    dispaly: flex;
-    height: 300px;
-    width: 200px;
+    height: 500px;
+    width: 300px;
     background-color: white;
+    border-radius: 15px;
+}
+
+#plant {
+    height: 200px;
+    width: 80%;
 }
 
 #thirdSec {
     height: 800px;
     width: 100%;
     background-color: #b8ccea;
+}
 
+#containerThree {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    width: 100%;
 }
 
 #officePic {
     height: 600px;
     width: 800px;
-    float: left;
+    border-radius: 15px;
+}
+
+#missionP {
+    width: 400px;
+    color: white;
+    font-size: 2em;
+    text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
 #fourthSec {
@@ -108,6 +169,15 @@ button {
     width: 100%;
     background-color: #e9dddd;
     display: flex;
+}
+
+#containerFour {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
 }
 
 #officePicTwo {
@@ -120,4 +190,9 @@ button {
 @keyframes fadeIn {
     0%   { opacity: 0; }
     100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
 }
