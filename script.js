@@ -3,6 +3,7 @@ let secTwo = document.querySelector("#containerTwo");
 let secThree = document.querySelector("#containerThree");
 let secFour = document.querySelector("#containerFour");
 
+let inputContainer = document.querySelector("#inputContainer");
 let mailSubmit = document.querySelector("#mailSubmit");
 let outOfPaper = document.querySelector("#outOfPaper");
 
@@ -28,10 +29,10 @@ window.addEventListener('scroll', function(e){
 mailSubmit.addEventListener('click', function(e){
     console.log(e);
     if (validateEmail(mailInput.value) == true){
-        document.querySelector("#inputContainer").setAttribute("style", "background-color: #00FF00;");
+        inputContainer.setAttribute("style", "background-color: #5cb85c;");
         alert("Thanks for subscribing!");
     } else {
-        document.querySelector("#inputContainer").setAttribute("style", "background-color: red;");
+        inputContainer.setAttribute("style", "background-color: #d9534f;");
         alert("Please enter a valid email.")
     }
     mailInput.value = "";
