@@ -146,6 +146,7 @@ footer {
     height: 50%;
     width: 80%;
     border-radius: 15px;
+    margin-bottom: 10%;
 }
 
 #thirdSec {
@@ -173,6 +174,8 @@ footer {
     color: white;
     font-size: 2em;
     text-shadow: 0.5px 0.5px #d3d3d3;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #fourthSec {
