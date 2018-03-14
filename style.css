@@ -77,7 +77,7 @@ footer {
 
 #firstSec {
     text-align: center;
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-color: #c9ced6;
     background-image: url("images/main.jpeg");
@@ -85,7 +85,7 @@ footer {
 }
 
 #containerOne {
-    height: 800px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,16 +110,16 @@ footer {
 #secondSec {
     display: flex;
     justify-content: center;
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-color: #739dcd;
 }
 
 #containerTwo {
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 800px;
     width: 100%;
 }
 
@@ -150,16 +150,16 @@ footer {
 }
 
 #thirdSec {
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-color: #b8ccea;
 }
 
 #containerThree {
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 800px;
     width: 100%;
 }
 
@@ -179,17 +179,17 @@ footer {
 }
 
 #fourthSec {
-    height: 800px;
+    height: 100vh;
     width: 100%;
     background-color: #e9dddd;
     display: flex;
 }
 
 #containerFour {
-    height: 800px;
+    height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-flow: column;
 }
@@ -227,50 +227,47 @@ footer {
 }
 
 @media (max-width: 768px) {
+    @keyframes fadeIn {}
+    @keyframes fadeOut {}
 
-@keyframes fadeIn {}
-@keyframes fadeOut {}
+    html {
+        width: 99%;
+    }
 
-html {
-    width: 99%;
-}
+    body {
+        width: 99%;
+    }
 
-body {
-    width: 99%;
-}
+    h1 {
+        font-size: 5em;
+    }
 
-h1 {
-    font-size: 5em;
-}
+    #firstSec {
+        height: 500px;
+        width: auto;
+    }
 
-#firstSec {
-    height: 500px;
-    width: auto;
-}
+    #secondSec, #thirdSec, #fourthSec {
+        width: auto;
+        height: auto;
+    }
 
-#secondSec, #thirdSec, #fourthSec {
-    width: auto;
-    height: auto;
-}
+    #containerOne, #containerTwo, #containerThree, #containerFour {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
 
-#containerOne, #containerTwo, #containerThree, #containerFour {
-    flex-direction: column;
-    height: auto;
-    width: auto;
-}
+    #boxOne, #boxTwo, #boxThree {
+        width: 100%;
+    }
 
-#boxOne, #boxTwo, #boxThree {
-    width: 100%;
-}
+    #officePic {
+        width: 80%;
+    }
 
-#officePic {
-    width: 80%;
-}
-
-#officePicTwo {
-    width: 80%;
-    height: 60%;
-}
-
-
+    #officePicTwo {
+        width: 80%;
+        height: 60%;
+    }
 }
