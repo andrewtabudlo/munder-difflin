@@ -1,23 +1,27 @@
 body {
     font-family: 'Merriweather', serif;
+    text-align: center;
 }
 
 h1 {
     color: white;
-    padding-top: 100px;
+    padding-top: 200px;
     font-size: 6em;
+    text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
 h2 {
     color: white;
+    text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
 h3 {
     color: white;
+    text-shadow: 0.5px 0.5px #d3d3d3;
 }
 
 p {
-    
+
 }
 
 input {
@@ -26,6 +30,20 @@ input {
 
 button {
 
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.hide {
+    animation: fadeOut 600ms;
+    animation-fill-mode: forwards;
+}
+
+.show {
+    animation: fadeIn 600ms;
+    animation-fill-mode: forwards;
 }
 
 .container {
@@ -45,24 +63,28 @@ button {
 
 #secondSec {
     display: flex;
+    justify-content: space-between;
     height: 800px;
     width: 100%;
     background-color: #739dcd;
 }
 
 #boxOne {
+    display: flex;
     height: 300px;
     width: 200px;
     background-color: white;
 }
 
 #boxTwo {
+    display: flex;
     height: 300px;
     width: 200px;
     background-color: white;
 }
 
 #boxThree {
+    dispaly: flex;
     height: 300px;
     width: 200px;
     background-color: white;
@@ -78,15 +100,24 @@ button {
 #officePic {
     height: 600px;
     width: 800px;
+    float: left;
 }
 
 #fourthSec {
     height: 800px;
     width: 100%;
     background-color: #e9dddd;
+    display: flex;
 }
 
 #officePicTwo {
+    justify-content: center;
     height: 700px;
     width: 1000px;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
 }
