@@ -7,12 +7,12 @@ let mailSubmit = document.querySelector("#mailSubmit");
 
 window.addEventListener('scroll', function(e){
     console.log(window.scrollY);
-    if (window.scrollY >= 500) {secTwo.classList.add("show");}
-    if (window.scrollY <= 600) {secTwo.classList.remove("show");}
-    if (window.scrollY >= 1300) {secThree.classList.add("show");}
-    if (window.scrollY <= 1400) {secThree.classList.remove("show");}
-    if (window.scrollY >= 2100) {secFour.classList.add("show");}
-    if (window.scrollY < 2200) {secFour.classList.remove("show");}
+    if (window.scrollY <= 599) {secTwo.classList = "hide";}
+    if (window.scrollY >= 600) {secTwo.classList = "show";}
+    if (window.scrollY <= 1399) {secThree.classList = "hide";}
+    if (window.scrollY >= 1400) {secThree.classList = "show";}
+    if (window.scrollY < 2199) {secFour.classList = "hide";}
+    if (window.scrollY >= 2200) {secFour.classList = "show";}
 });
 
 mailSubmit.addEventListener('click', function(e){
