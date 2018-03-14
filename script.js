@@ -9,6 +9,12 @@ let outOfPaper = document.querySelector("#outOfPaper");
 let audio = new Audio("audio/outofpaper.mp3");
 let isPlaying = false;
 
+function validateEmail(email)
+{
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
 window.addEventListener('scroll', function(e){
     console.log(window.scrollY);
     if (window.scrollY <= 599) {secTwo.classList = "hide";}
@@ -21,9 +27,14 @@ window.addEventListener('scroll', function(e){
 
 mailSubmit.addEventListener('click', function(e){
     console.log(e);
+    if (validateEmail(mailInput.value) == true){
+        document.querySelector("#inputContainer").setAttribute("style", "background-color: #00FF00;");
+        alert("Thanks for subscribing!");
+    } else {
+        document.querySelector("#inputContainer").setAttribute("style", "background-color: red;");
+        alert("Please enter a valid email.")
+    }
     mailInput.value = "";
-    document.querySelector("#inputContainer").setAttribute("style", "background-color: #00FF00;");
-    alert("Thanks for subscribing!");
 });
 
 outOfPaper.addEventListener('click', function(e){
