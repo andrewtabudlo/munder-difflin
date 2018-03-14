@@ -130,44 +130,16 @@ footer {
     width: 80%;
 }
 
-#boxOne {
+#boxOne, #boxTwo, #boxThree {
     text-align: center;
-    height: 500px;
-    width: 400px;
+    height: 70%;
+    width: 27%;
     background-color: white;
     border-radius: 15px;
 }
 
-#plane {
-    height: 300px;
-    width: 80%;
-    border-radius: 15px;
-}
-
-#boxTwo {
-    text-align: center;
-    height: 500px;
-    width: 400px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#tree {
-    height: 300px;
-    width: 80%;
-    border-radius: 15px;
-}
-
-#boxThree {
-    text-align: center;
-    height: 500px;
-    width: 400px;
-    background-color: white;
-    border-radius: 15px;
-}
-
-#plant {
-    height: 300px;
+#plane, #tree, #plant {
+    height: 50%;
     width: 80%;
     border-radius: 15px;
 }
@@ -193,7 +165,7 @@ footer {
 }
 
 #missionP {
-    width: 400px;
+    width: 80%;
     color: white;
     font-size: 2em;
     text-shadow: 0.5px 0.5px #d3d3d3;
@@ -252,45 +224,37 @@ footer {
 @keyframes fadeIn {}
 @keyframes fadeOut {}
 
+html {
+    width: 99%;
+}
+
+body {
+    width: 99%;
+}
+
+h1 {
+    font-size: 5em;
+}
+
 #firstSec {
+    height: 100%;
+}
+
+#secondSec, #thirdSec, #fourthSec {
     width: auto;
     height: auto;
 }
 
-#containerOne {
-    flex-direction: column;
-    width: auto;
-}
-
-#secondSec {
-    width: auto;
-    height: auto;
-}
-
-#containerTwo {
+#containerOne, #containerTwo, #containerThree, #containerFour {
     flex-direction: column;
     height: auto;
     width: auto;
 }
 
-#thirdSec {
-    width: auto;
-    height: auto;
-}
 
-#containerThree {
-    flex-direction: column;
-    height: auto;
-    width: auto;
-}
 
 #officePic {
     width: 80%;
-}
-
-#containerFour {
-    width: auto;
-    height: auto;
 }
 
 #officePicTwo {
@@ -298,10 +262,5 @@ footer {
     height: 60%;
 }
 
-#containerFour {
-    flex-direction: column;
-    height: auto;
-    width: auto;
-}
 
 }

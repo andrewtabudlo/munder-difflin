@@ -19,16 +19,16 @@ window.addEventListener('scroll', function(e){
     if (window.scrollY >= 2200) {secFour.classList = "show";}
 });
 
-outOfPaper.addEventListener('click', function(e){
-    console.log(e);
-    e.preventDefault();
-    isPlaying = !isPlaying;
-    isPlaying ? audio.play() : audio.pause(); audio.currentTime = 0;
-});
-
 mailSubmit.addEventListener('click', function(e){
     console.log(e);
     mailInput.value = "";
     document.querySelector("#inputContainer").setAttribute("style", "background-color: #00FF00;");
     alert("Thanks for subscribing!");
+});
+
+outOfPaper.addEventListener('click', function(e){
+    console.log(e);
+    e.preventDefault();
+    isPlaying = !isPlaying;
+    isPlaying ? audio.play() : audio.pause(); audio.currentTime = 0;
 });
