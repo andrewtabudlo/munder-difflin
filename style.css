@@ -219,7 +219,7 @@ footer {
 	100% {left: 0;}
 }
 
-@media (max-width: 666px) {
+@media (max-width: 768px) {
 
 @keyframes fadeIn {}
 @keyframes fadeOut {}
@@ -237,7 +237,8 @@ h1 {
 }
 
 #firstSec {
-    height: 100%;
+    height: 500px;
+    width: auto;
 }
 
 #secondSec, #thirdSec, #fourthSec {
@@ -251,7 +252,9 @@ h1 {
     width: auto;
 }
 
-
+#boxOne, #boxTwo, #boxThree {
+    width: 100%;
+}
 
 #officePic {
     width: 80%;
