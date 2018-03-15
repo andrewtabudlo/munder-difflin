@@ -52,7 +52,8 @@ button {
 }
 
 footer {
-    color: white;
+    color: black;
+    background-color: #e9dddd;  
 }
 
 .hidden {
@@ -260,6 +261,7 @@ footer {
 
     #boxOne, #boxTwo, #boxThree {
         width: 100%;
+        border-radius: 0;
     }
 
     #officePic {
